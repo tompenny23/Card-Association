@@ -53,7 +53,7 @@ public class cardClass {
 
 		for (cardClass i:cardInstanceList) {
 			ImageIcon icon = new ImageIcon("cardImages/" + i.cardNumber + i.cardSuit + ".png");
-			String cardName = (String)JOptionPane.showInputDialog(null, "Card is " + i.cardNumber + " of " + i.cardSuit, "Card Memorisation", JOptionPane.QUESTION_MESSAGE, icon, null, null);
+			String cardName = (String)JOptionPane.showInputDialog(null, "Card is " + i.cardNumber + " of " + i.cardSuit, "Card Association", JOptionPane.QUESTION_MESSAGE, icon, null, null);
 			String output = i.checkAnswer(cardName);
 			JOptionPane.showMessageDialog(null, output , "Results", JOptionPane.PLAIN_MESSAGE );
 		}
